@@ -1,6 +1,6 @@
 # NREM and REM PAC comodulograms
 
-**Status:** Reference analysis — methodological review and MATLAB run pending. Original analysis files are byte-for-byte preserved. Upload copy suffixes were removed from destination filenames only.
+**Status:** Reference analysis — methodological review and MATLAB run pending.
 
 ## Purpose and typical use
 
@@ -14,7 +14,7 @@ MAT with eeg or EEG and fs_eeg or eeg_frequency. CSV columns time_s,score; one-c
 
 Signal Processing Toolbox. NREM optionally calls apply_50Hz_notch_if_needed if present on your MATLAB path; that optional helper is not bundled. Record whether it was available.
 
-MATLAB release and complete toolbox compatibility have not been verified. Add only this module and explicitly required helper directories to your path; do not recursively add the whole repository.
+Check the required MATLAB release and toolboxes locally. Add this folder and its required helpers to the path; avoid adding the entire repository because some scripts share filenames.
 
 ## How to use
 
@@ -26,11 +26,9 @@ COM = ach_pac_comod_nrem_segment('recording.mat','scores.csv', ...
 % For REM use ach_pac_comod_rem_segment with the same arguments.
 ```
 
-Run on a copy of your data. Scripts operate on the current MATLAB workspace; inspect paths, `clear`, `save`, and variable assumptions before executing them. Function calls below are usage examples, not completed validation runs.
-
 ## Example data and outputs
 
-No experimental data are distributed with this module. See the source help below for return variables. Where a synthetic example exists, its own README identifies the data and reference results. Otherwise a small example recording and author-confirmed plot remain to be added.
+No example recording is included yet. Consult the function interface below for its outputs.
 
 ## Parameters and limitations
 
@@ -41,7 +39,6 @@ Both concatenate selected state samples before filtering, creating boundaries be
 - Source project: MSc thesis repository of **Margarida Seabra Gomes**, as credited in its README. Confirm per-file original authors and any adaptations; preserve existing credits.
 - Contributor/adaptor roles: **to confirm** with the source owner.
 - Current lab maintainer: **to assign**.
-- Documentation and synthetic demonstrations: prepared with OpenAI Codex assistance, 2026-09-28.
 - Redistribution/license approval: see [reuse policy](../../../REUSE_POLICY.md).
 
 | Included file | Source |
@@ -49,7 +46,7 @@ Both concatenate selected state samples before filtering, creating boundaries be
 | `ach_pac_comod_nrem_segment.m` | Source repository snapshot `e55d0fd019f973f90a81b8b50752584be5900375`; full path in SOURCE_MANIFEST.csv |
 | `ach_pac_comod_rem_segment.m` | Source repository snapshot `e55d0fd019f973f90a81b8b50752584be5900375`; full path in SOURCE_MANIFEST.csv |
 
-Exact checksums are recorded in the root `SOURCE_MANIFEST.csv`.
+See `SOURCE_MANIFEST.csv` in the repository root for the original source and checksum.
 
 ## Source interfaces and original help
 

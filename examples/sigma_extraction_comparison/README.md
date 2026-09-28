@@ -1,6 +1,6 @@
 # Sigma extraction comparison
 
-**Status:** Candidate — MATLAB run pending. Original analysis files are byte-for-byte preserved. Upload copy suffixes were removed from destination filenames only.
+**Status:** Candidate — MATLAB run pending.
 
 ## Purpose and typical use
 
@@ -14,17 +14,15 @@ Use a clean workspace to trigger synthetic generation, or provide EEG and fs_eeg
 
 Signal Processing and Wavelet toolboxes.
 
-MATLAB release and complete toolbox compatibility have not been verified. Add only this module and explicitly required helper directories to your path; do not recursively add the whole repository.
+Check the required MATLAB release and toolboxes locally. Add this folder and its required helpers to the path; avoid adding the entire repository because some scripts share filenames.
 
 ## How to use
 
 Open the script and run with a clean workspace.
 
-Run on a copy of your data. Scripts operate on the current MATLAB workspace; inspect paths, `clear`, `save`, and variable assumptions before executing them. Function calls below are usage examples, not completed validation runs.
-
 ## Example data and outputs
 
-No experimental data are distributed with this module. See the source help below for return variables. Where a synthetic example exists, its own README identifies the data and reference results. Otherwise a small example recording and author-confirmed plot remain to be added.
+No example recording is included yet. Consult the function interface below for its outputs.
 
 ## Parameters and limitations
 
@@ -35,14 +33,13 @@ Not a detector validation or a recommended-method ranking. Random synthetic outp
 - Original author(s): **to confirm**; preserve existing in-file credits and cited methods.
 - Contributor/adaptor roles: **to confirm** with the source owner.
 - Current lab maintainer: **to assign**.
-- Documentation and synthetic demonstrations: prepared with OpenAI Codex assistance, 2026-09-28.
 - Redistribution/license approval: see [reuse policy](../../REUSE_POLICY.md).
 
 | Included file | Source |
 |---|---|
 | `sigma_power_extraction_comparison.m` | matlab sharing.zip :: matlab sharing/sigma_power_extraction_comparison.m |
 
-Exact checksums are recorded in the root `SOURCE_MANIFEST.csv`.
+See `SOURCE_MANIFEST.csv` in the repository root for the original source and checksum.
 
 ## Source interfaces and original help
 

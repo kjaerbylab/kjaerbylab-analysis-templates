@@ -11,10 +11,10 @@
 
 ## Status labels
 
-- Candidate: selected after source inspection; example run pending.
+- Candidate: documented analysis awaiting an example run.
 - Template skeleton: intentionally requires implementation/configuration.
 - Reference: retained for context; not an endorsed general analysis.
 - Example reproduced: reviewer ran the documented example and recorded environment and output.
 - Method validation: a separate scientific assessment; successful execution alone does not establish it.
 
-For this initial import, do not edit original `.m` files. Propose corrections separately with a clear change record and author review. Preserve original credits and source lineage.
+Preserve original credits and source lineage. Explain changes to analysis code in the pull request.

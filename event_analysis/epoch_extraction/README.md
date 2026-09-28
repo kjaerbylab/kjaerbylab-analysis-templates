@@ -1,6 +1,6 @@
 # Event-aligned traces
 
-**Status:** Candidate — MATLAB run pending. Original analysis files are byte-for-byte preserved. Upload copy suffixes were removed from destination filenames only.
+**Status:** Candidate — MATLAB run pending.
 
 ## Purpose and typical use
 
@@ -14,7 +14,7 @@ Signal vector; event times in seconds on the same timeline; sample rate in Hz.
 
 MATLAB and Signal Processing Toolbox (`downsample`).
 
-MATLAB release and complete toolbox compatibility have not been verified. Add only this module and explicitly required helper directories to your path; do not recursively add the whole repository.
+Check the required MATLAB release and toolboxes locally. Add this folder and its required helpers to the path; avoid adding the entire repository because some scripts share filenames.
 
 ## How to use
 
@@ -24,11 +24,9 @@ Use `examples/run_example.m`, or:
     'time_before',10,'time_after',10,'show_figure',true);
 ```
 
-Run on a copy of your data. Scripts operate on the current MATLAB workspace; inspect paths, `clear`, `save`, and variable assumptions before executing them. Function calls below are usage examples, not completed validation runs.
-
 ## Example data and outputs
 
-No experimental data are distributed with this module. See the source help below for return variables. Where a synthetic example exists, its own README identifies the data and reference results. Otherwise a small example recording and author-confirmed plot remain to be added.
+See [the synthetic example](examples/README.md) for sample data, a runnable MATLAB script, and reference output. The MATLAB result has not yet been recorded.
 
 ## Parameters and limitations
 
@@ -39,14 +37,13 @@ Original plot shading is SD, not SEM. Keep events away from trace boundaries. Ti
 - Original author(s): **to confirm**; preserve existing in-file credits and cited methods.
 - Contributor/adaptor roles: **to confirm** with the source owner.
 - Current lab maintainer: **to assign**.
-- Documentation and synthetic demonstrations: prepared with OpenAI Codex assistance, 2026-09-28.
 - Redistribution/license approval: see [reuse policy](../../REUSE_POLICY.md).
 
 | Included file | Source |
 |---|---|
 | `epoc_extract.m` | matlab sharing.zip :: matlab sharing/functions/epoc_extract.m |
 
-Exact checksums are recorded in the root `SOURCE_MANIFEST.csv`.
+See `SOURCE_MANIFEST.csv` in the repository root for the original source and checksum.
 
 ## Source interfaces and original help
 

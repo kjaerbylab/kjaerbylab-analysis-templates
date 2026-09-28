@@ -2,7 +2,7 @@
 
 A curated MATLAB starter collection for recurring sleep, EEG and photometry analyses.
 
-**Version 0.1 — review draft.** Original analysis code is unchanged. Modules are candidates or reference workflows, not certified lab methods. MATLAB was not available for execution during assembly.
+**Version 0.1.** The catalogue distinguishes reusable analysis candidates from project-specific reference workflows. Check each module’s requirements and status before applying it to experimental data.
 
 ## Start here
 
@@ -11,7 +11,7 @@ A curated MATLAB starter collection for recurring sleep, EEG and photometry anal
 3. Begin with a synthetic demonstration where provided.
 4. Have a lab member reproduce the output in MATLAB before using a module on study data.
 
-Two synthetic examples are included: [sleep architecture](sleep/sleep_architecture/examples/README.md) and [event-aligned traces](event_analysis/epoch_extraction/examples/README.md). Their PNGs and CSVs are independent Python reference calculations, **not outputs verified by running MATLAB**.
+Two synthetic examples are included: [sleep architecture](sleep/sleep_architecture/examples/README.md) and [event-aligned traces](event_analysis/epoch_extraction/examples/README.md). Their PNGs and CSVs are independent reference calculations; MATLAB reproduction has not yet been recorded.
 
 ## Analysis catalogue
 
@@ -50,11 +50,11 @@ Two synthetic examples are included: [sleep architecture](sleep/sleep_architectu
 
 Topics contain analysis modules. Each module has a README and original source files. Shared dependencies are explicit; do not use `addpath(genpath(pwd))` on the entire repository because some alternative scripts share filenames.
 
-Upload suffixes such as `(1)` were removed from selected destination filenames. Source bytes remain unchanged. [SOURCE_MANIFEST.csv](SOURCE_MANIFEST.csv) records original filenames, origins and SHA-256 hashes.
+[SOURCE_MANIFEST.csv](SOURCE_MANIFEST.csv) records the origin and checksum of each included analysis file.
 
 ## Contributing and review
 
-Copy [_analysis_template](_analysis_template/README.md) for new analyses. Follow [CONTRIBUTING.md](CONTRIBUTING.md). [REVIEW_QUEUE.md](REVIEW_QUEUE.md) lists remaining checks, and [docs/SELECTION.md](docs/SELECTION.md) explains excluded files.
+Copy [_analysis_template](_analysis_template/README.md) for new analyses and follow [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Published and project analyses
 
@@ -66,7 +66,3 @@ Keep full experiment pipelines in their project repositories. This collection co
 ## Authors and reuse
 
 Original authors retain credit. Authorship must be confirmed per module; the uploader is not automatically the author. No blanket software license has been assigned. See [REUSE_POLICY.md](REUSE_POLICY.md).
-
-## Publish on GitHub
-
-See [docs/GITHUB_SETUP.md](docs/GITHUB_SETUP.md). This package has not been published to GitHub.
