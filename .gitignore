@@ -1,0 +1,14 @@
+# Operating-system and editor temporary files
+.DS_Store
+Thumbs.db
+*.asv
+*.m~
+__pycache__/
+*.pyc
+# Local experiment data and generated runs
+local_data/
+local_outputs/
+**/generated_output/
+# Local configuration
+config.local.*
+.env
