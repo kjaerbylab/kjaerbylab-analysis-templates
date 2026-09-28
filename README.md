@@ -65,4 +65,4 @@ Keep full experiment pipelines in their project repositories. This collection co
 
 ## Authors and reuse
 
-Original authors retain credit. Authorship must be confirmed per module; the uploader is not automatically the author. No blanket software license has been assigned. See [REUSE_POLICY.md](REUSE_POLICY.md).
+Please check README files associated with each script to confirm and credit the authors.
