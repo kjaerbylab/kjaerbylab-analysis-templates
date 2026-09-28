@@ -1,1 +1,1 @@
-# kjaerbylab-analysis-template
+# kjaerbylab-analysis-templates
