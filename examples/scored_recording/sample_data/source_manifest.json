@@ -1,0 +1,64 @@
+{
+  "source_filename": "20251011-baseline-mouse3_scored.mat",
+  "source_sha256": "b4074ae7d3c4bc0cfa984200dc90dfddfb8581f33dc91a27c6f2fe67fa5f4600",
+  "source_file_size_bytes": 303963608,
+  "excerpt_start_s": 317,
+  "excerpt_stop_s": 497,
+  "duration_s": 180,
+  "selection": "Earliest 180-s window with at least 30 scored seconds in each of codes 0, 1, and 2. Selected for state diversity, not spindle or PAC outcomes.",
+  "state_codes": {
+    "Wake": 0,
+    "NREM": 1,
+    "REM": 2
+  },
+  "state_code_provenance": "Confirmed by the uploader in this conversation.",
+  "sleep_epoch_s": 1,
+  "sleep_epoch_basis": "Inferred from 23331 scores and approximately 23330 s of signal; not explicitly stored in source.",
+  "source_signal_duration_s": {
+    "eeg": 23330.0017152,
+    "emg": 23330.0017152,
+    "ne": 23330.001248599976
+  },
+  "source_sleep_scores": 23331,
+  "score_coverage_note": "One final source label extends past signal coverage. The excerpt excludes it.",
+  "source_start_time_original": 7000,
+  "source_start_time_note": "Meaning not specified in the MAT file; not applied to excerpt time.",
+  "source_sample_ranges": {
+    "eeg": {
+      "first_sample_matlab_1_based": 193483,
+      "last_sample_matlab_1_based": 303345,
+      "samples": 109863,
+      "first_sample_excerpt_time_s": 0.000908799999990606
+    },
+    "emg": {
+      "first_sample_matlab_1_based": 193483,
+      "last_sample_matlab_1_based": 303345,
+      "samples": 109863,
+      "first_sample_excerpt_time_s": 0.000908799999990606
+    },
+    "ne": {
+      "first_sample_matlab_1_based": 322471,
+      "last_sample_matlab_1_based": 505575,
+      "samples": 183105,
+      "first_sample_excerpt_time_s": 0.0009024599819440482
+    }
+  },
+  "operations": [
+    "Crop samples whose original stored-file time is >=317 s and <497 s.",
+    "Reshape channels from rows to columns; retain sample values and original dtypes.",
+    "Store scoring as uint8 with values unchanged.",
+    "Retain native sampling rates, including fractional first-sample offsets relative to excerpt start.",
+    "Omit unrelated empty video fields and class-count field."
+  ],
+  "not_applied": [
+    "resampling",
+    "filtering",
+    "photometry normalization",
+    "artifact rejection",
+    "spindle detection",
+    "PAC estimation"
+  ],
+  "excerpt_sha256": "eaa5b4d26ad726e4f199ee863c8922aa715d9c98cebbb822ae8ca176fa7023dd",
+  "excerpt_size_bytes": 2139803,
+  "reference_plot": "Generated directly in Python from the excerpt. MATLAB script execution has not been verified."
+}

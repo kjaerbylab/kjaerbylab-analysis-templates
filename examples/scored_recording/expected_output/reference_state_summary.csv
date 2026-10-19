@@ -1,0 +1,4 @@
+state,code,duration_s,percent_scored
+Wake,0,30,16.666666666666664
+NREM,1,90,50.0
+REM,2,60,33.33333333333333

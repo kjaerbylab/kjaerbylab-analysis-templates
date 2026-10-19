@@ -13,10 +13,13 @@ A curated MATLAB starter collection for recurring sleep, EEG and photometry anal
 
 Two synthetic examples are included: [sleep architecture](sleep/sleep_architecture/examples/README.md) and [event-aligned traces](event_analysis/epoch_extraction/examples/README.md). Their PNGs and CSVs are independent reference calculations; MATLAB reproduction has not yet been recorded.
 
+A [real scored recording example](examples/scored_recording/README.md) is also included: a three-minute EEG/EMG/photometry excerpt with a plotting script and state summary. Open `examples/scored_recording/run_example.m` in MATLAB and press Run. See its data guide for units and timing assumptions.
+
 ## Analysis catalogue
 
 | Analysis | Typical use | Status |
 |---|---|---|
+| [Real scored recording visualisation](examples/scored_recording/README.md) | Plot EEG, EMG, stored photometry and sleep scoring from an included real excerpt. | Example — MATLAB run pending |
 | [Sleep architecture](sleep/sleep_architecture/README.md) | Stage percentages, mean bout duration, bout rates and microarousal rates. | Candidate — MATLAB run pending |
 | [Event-aligned traces](event_analysis/epoch_extraction/README.md) | Extract and plot signal windows around event timestamps. | Candidate — MATLAB run pending |
 | [Pre/post event measurements](event_analysis/pre_post/README.md) | Measure event-related changes in mean level or AUC. | Candidate — MATLAB run pending |
